@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="sector.cpp" />
+    <ClCompile Include="Module\Render\dxOverlay\dx_overlay.cpp">
+      <Filter>Module\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\Render\dxRenderer\dx_renderer.cpp">
+      <Filter>Module\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_demo.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_draw.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_impl_dx9.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_impl_win32.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_widgets.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Module">
+      <UniqueIdentifier>{41a1464c-fa48-40f2-963f-863ba45155ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utill">
+      <UniqueIdentifier>{9d7e425a-545f-4b53-b6e3-c1ce9ff48166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Render">
+      <UniqueIdentifier>{e408ab90-b740-488d-adcc-ef8330b40d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{7d0685b7-3234-492b-a24e-08f89a665e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\DirectX">
+      <UniqueIdentifier>{27617974-c3ca-4a60-a919-dcae5bddecd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\ImGui">
+      <UniqueIdentifier>{9887c0d0-6d11-45dc-9eaa-2a0a95cee27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Config">
+      <UniqueIdentifier>{dea9e8f0-97cb-4aa0-abe1-e2d544777473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Server">
+      <UniqueIdentifier>{666854df-ce3e-4ada-b95c-be25c135ac2b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Module\Include.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Json\Json.hpp">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\GetGameAddres.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Memory.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Struct.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Addres.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\SDK.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\Addres.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\GlowESP.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\AimBot.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\AutoPistol.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\ToolSDK.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\Brightness.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\BunnyHop.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\Chams.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\FakeLag.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\FovChanger.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\NightMod.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\NoFlash.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\RadarHack.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\BoxESP.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Render\dxOverlay\dx_overlay.h">
+      <Filter>Module\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Render\dxRenderer\dx_renderer.h">
+      <Filter>Module\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Render\RenderModule.h">
+      <Filter>Module\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Var.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\SkinChanger.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\SkinChangerSDK.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\TriggerBot.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\Convars.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\ConvarsSDK.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\audiodefs.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\comdecl.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D2D1.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D2D1Helper.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D2DBaseTypes.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D2Derr.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3d9.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3d9caps.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3d9types.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D10.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D10_1.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D10_1shader.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D10effect.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3d10misc.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3d10sdklayers.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D10shader.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D11.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D11SDKLayers.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3D11Shader.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3Dcommon.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3Dcompiler.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DCSX.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9anim.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9core.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9effect.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9math.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9mesh.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9shader.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9shape.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9tex.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx9xof.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX10.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\d3dx10async.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX10core.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX10math.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX10mesh.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX10tex.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX11.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX11async.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX11core.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\D3DX11tex.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\Dcommon.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dinput.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dinputd.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dsconf.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dsetup.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dsound.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\DWrite.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dxdiag.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\DxErr.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dxfile.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\DXGI.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\DXGIFormat.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\DXGIType.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\dxsdkver.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\gameux.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\PIXPlugin.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\rmxfguid.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\rmxftmpl.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\rpcsal.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\X3DAudio.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\xact3.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\xact3d3.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\xact3wb.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\XAPO.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\XAPOBase.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\XAPOFX.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\XAudio2.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\XAudio2fx.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\XDSP.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\XInput.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\xma2defs.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectX\Include\xnamath.h">
+      <Filter>Menu\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imconfig.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imgui.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imgui_impl_dx9.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imgui_impl_win32.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imgui_internal.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imstb_rectpack.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imstb_textedit.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imstb_truetype.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuConfig.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Config\Config.h">
+      <Filter>Module\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Server\Message.h">
+      <Filter>Module\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Server\Request.h">
+      <Filter>Module\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Server\HWID.h">
+      <Filter>Module\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Server\Server.h">
+      <Filter>Module\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Server\Config.h">
+      <Filter>Module\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Defender\BSOD.h">
+      <Filter>Module\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Defender\HideImport.h">
+      <Filter>Module\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\KnifeChanger.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\KnifeChangerSDK.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\GlowESPDistance.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\GlowESPHP.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\EntityClassID.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utill\AddresVar.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Menu\DirectX\Include\D3DX_DXGIFormatConvert.inl">
+      <Filter>Menu\DirectX</Filter>
+    </None>
+    <None Include="Menu\DirectX\Include\d3dx9math.inl">
+      <Filter>Menu\DirectX</Filter>
+    </None>
+    <None Include="Menu\DirectX\Include\D3DX10math.inl">
+      <Filter>Menu\DirectX</Filter>
+    </None>
+    <None Include="Menu\DirectX\Include\xnamathconvert.inl">
+      <Filter>Menu\DirectX</Filter>
+    </None>
+    <None Include="Menu\DirectX\Include\xnamathmatrix.inl">
+      <Filter>Menu\DirectX</Filter>
+    </None>
+    <None Include="Menu\DirectX\Include\xnamathmisc.inl">
+      <Filter>Menu\DirectX</Filter>
+    </None>
+    <None Include="Menu\DirectX\Include\xnamathvector.inl">
+      <Filter>Menu\DirectX</Filter>
+    </None>
+  </ItemGroup>
+</Project>

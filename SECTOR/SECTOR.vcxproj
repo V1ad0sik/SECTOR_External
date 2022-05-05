@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a2b03fe2-126a-426d-9ffe-f7c70b719d8f}</ProjectGuid>
+    <RootNamespace>SECTOR</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Render\dxRenderer;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Render\dxOverlay;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\SECTOR\SECTOR\Module\Render\dxRenderer;C:\Users\User\Desktop\SECTOR\SECTOR\Module\Render\dxOverlay;C:\Users\User\Desktop\SECTOR\SECTOR\Module\Json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <OmitFramePointers>false</OmitFramePointers>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <BaseAddress>
+      </BaseAddress>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Render\dxRenderer;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Render\dxOverlay;C:\Users\User\Desktop\SECTOR\SECTOR\Module\Json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Render\dxRenderer;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Render\dxOverlay;C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Menu\ImGui\imgui.cpp" />
+    <ClCompile Include="Menu\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Menu\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Menu\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Menu\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Menu\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Module\Render\dxOverlay\dx_overlay.cpp" />
+    <ClCompile Include="Module\Render\dxRenderer\dx_renderer.cpp" />
+    <ClCompile Include="sector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Menu\DirectX\Include\audiodefs.h" />
+    <ClInclude Include="Menu\DirectX\Include\comdecl.h" />
+    <ClInclude Include="Menu\DirectX\Include\D2D1.h" />
+    <ClInclude Include="Menu\DirectX\Include\D2D1Helper.h" />
+    <ClInclude Include="Menu\DirectX\Include\D2DBaseTypes.h" />
+    <ClInclude Include="Menu\DirectX\Include\D2Derr.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D10.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D10effect.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3d10misc.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3d10sdklayers.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D10shader.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D10_1.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D10_1shader.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D11.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D11SDKLayers.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3D11Shader.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3d9.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3d9caps.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3d9types.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3Dcommon.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3Dcompiler.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DCSX.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX10.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx10async.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX10core.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX10math.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX10mesh.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX10tex.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX11.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX11async.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX11core.h" />
+    <ClInclude Include="Menu\DirectX\Include\D3DX11tex.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9anim.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9core.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9effect.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9math.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9mesh.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9shader.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9shape.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9tex.h" />
+    <ClInclude Include="Menu\DirectX\Include\d3dx9xof.h" />
+    <ClInclude Include="Menu\DirectX\Include\Dcommon.h" />
+    <ClInclude Include="Menu\DirectX\Include\dinput.h" />
+    <ClInclude Include="Menu\DirectX\Include\dinputd.h" />
+    <ClInclude Include="Menu\DirectX\Include\dsconf.h" />
+    <ClInclude Include="Menu\DirectX\Include\dsetup.h" />
+    <ClInclude Include="Menu\DirectX\Include\dsound.h" />
+    <ClInclude Include="Menu\DirectX\Include\DWrite.h" />
+    <ClInclude Include="Menu\DirectX\Include\dxdiag.h" />
+    <ClInclude Include="Menu\DirectX\Include\DxErr.h" />
+    <ClInclude Include="Menu\DirectX\Include\dxfile.h" />
+    <ClInclude Include="Menu\DirectX\Include\DXGI.h" />
+    <ClInclude Include="Menu\DirectX\Include\DXGIFormat.h" />
+    <ClInclude Include="Menu\DirectX\Include\DXGIType.h" />
+    <ClInclude Include="Menu\DirectX\Include\dxsdkver.h" />
+    <ClInclude Include="Menu\DirectX\Include\gameux.h" />
+    <ClInclude Include="Menu\DirectX\Include\PIXPlugin.h" />
+    <ClInclude Include="Menu\DirectX\Include\rmxfguid.h" />
+    <ClInclude Include="Menu\DirectX\Include\rmxftmpl.h" />
+    <ClInclude Include="Menu\DirectX\Include\rpcsal.h" />
+    <ClInclude Include="Menu\DirectX\Include\X3DAudio.h" />
+    <ClInclude Include="Menu\DirectX\Include\xact3.h" />
+    <ClInclude Include="Menu\DirectX\Include\xact3d3.h" />
+    <ClInclude Include="Menu\DirectX\Include\xact3wb.h" />
+    <ClInclude Include="Menu\DirectX\Include\XAPO.h" />
+    <ClInclude Include="Menu\DirectX\Include\XAPOBase.h" />
+    <ClInclude Include="Menu\DirectX\Include\XAPOFX.h" />
+    <ClInclude Include="Menu\DirectX\Include\XAudio2.h" />
+    <ClInclude Include="Menu\DirectX\Include\XAudio2fx.h" />
+    <ClInclude Include="Menu\DirectX\Include\XDSP.h" />
+    <ClInclude Include="Menu\DirectX\Include\XInput.h" />
+    <ClInclude Include="Menu\DirectX\Include\xma2defs.h" />
+    <ClInclude Include="Menu\DirectX\Include\xnamath.h" />
+    <ClInclude Include="Menu\ImGui\imconfig.h" />
+    <ClInclude Include="Menu\ImGui\imgui.h" />
+    <ClInclude Include="Menu\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="Menu\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Menu\ImGui\imgui_internal.h" />
+    <ClInclude Include="Menu\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Menu\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Menu\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Menu\MenuConfig.h" />
+    <ClInclude Include="Module\Addres.h" />
+    <ClInclude Include="Module\Config\Config.h" />
+    <ClInclude Include="Module\Defender\BSOD.h" />
+    <ClInclude Include="Module\Defender\HideImport.h" />
+    <ClInclude Include="Module\GetGameAddres.h" />
+    <ClInclude Include="Module\Include.h" />
+    <ClInclude Include="Module\Json\Json.hpp" />
+    <ClInclude Include="Module\Memory.h" />
+    <ClInclude Include="Module\Render\dxOverlay\dx_overlay.h" />
+    <ClInclude Include="Module\Render\dxRenderer\dx_renderer.h" />
+    <ClInclude Include="Module\Render\RenderModule.h" />
+    <ClInclude Include="Module\Server\Config.h" />
+    <ClInclude Include="Module\Server\HWID.h" />
+    <ClInclude Include="Module\Server\Request.h" />
+    <ClInclude Include="Module\Server\Message.h" />
+    <ClInclude Include="Module\Server\Server.h" />
+    <ClInclude Include="Module\Struct.h" />
+    <ClInclude Include="Module\Var.h" />
+    <ClInclude Include="Utill\Addres.h" />
+    <ClInclude Include="Utill\AddresVar.h" />
+    <ClInclude Include="Utill\AimBot.h" />
+    <ClInclude Include="Utill\AutoPistol.h" />
+    <ClInclude Include="Utill\BoxESP.h" />
+    <ClInclude Include="Utill\Brightness.h" />
+    <ClInclude Include="Utill\BunnyHop.h" />
+    <ClInclude Include="Utill\Chams.h" />
+    <ClInclude Include="Utill\Convars.h" />
+    <ClInclude Include="Utill\ConvarsSDK.h" />
+    <ClInclude Include="Utill\EntityClassID.h" />
+    <ClInclude Include="Utill\FakeLag.h" />
+    <ClInclude Include="Utill\FovChanger.h" />
+    <ClInclude Include="Utill\GlowESP.h" />
+    <ClInclude Include="Utill\GlowESPDistance.h" />
+    <ClInclude Include="Utill\GlowESPHP.h" />
+    <ClInclude Include="Utill\KnifeChanger.h" />
+    <ClInclude Include="Utill\KnifeChangerSDK.h" />
+    <ClInclude Include="Utill\NightMod.h" />
+    <ClInclude Include="Utill\NoFlash.h" />
+    <ClInclude Include="Utill\RadarHack.h" />
+    <ClInclude Include="Utill\SDK.h" />
+    <ClInclude Include="Utill\SkinChanger.h" />
+    <ClInclude Include="Utill\SkinChangerSDK.h" />
+    <ClInclude Include="Utill\ToolSDK.h" />
+    <ClInclude Include="Utill\TriggerBot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Menu\DirectX\Include\D3DX10math.inl" />
+    <None Include="Menu\DirectX\Include\d3dx9math.inl" />
+    <None Include="Menu\DirectX\Include\D3DX_DXGIFormatConvert.inl" />
+    <None Include="Menu\DirectX\Include\xnamathconvert.inl" />
+    <None Include="Menu\DirectX\Include\xnamathmatrix.inl" />
+    <None Include="Menu\DirectX\Include\xnamathmisc.inl" />
+    <None Include="Menu\DirectX\Include\xnamathvector.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
