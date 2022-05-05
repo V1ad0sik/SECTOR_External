@@ -1,5 +1,4 @@
 # SECTOR_External
-Внешний чит для CS:GO
 
 ![3](https://user-images.githubusercontent.com/80263093/166865024-ed8c5951-a612-499d-b85e-0d73ecde7aef.png)
 ![4](https://user-images.githubusercontent.com/80263093/166865027-22347cad-2e9e-4518-864e-bb457543f0dd.png)
