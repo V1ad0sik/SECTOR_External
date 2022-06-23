@@ -38,6 +38,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
     }
 
     GameAddres::GetGameAddres("csgo.exe", "Counter-Strike: Global Offensive - Direct3D 9");
+
+    Updater::Update();
+    Updater::Remove();
+
     GameAddresSDK::StartScan();
 
     ShowWindow(HWND, SW_SHOWDEFAULT);

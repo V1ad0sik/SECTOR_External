@@ -115,7 +115,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\SECTOR\SECTOR\Module\Render\dxRenderer;C:\Users\User\Desktop\SECTOR\SECTOR\Module\Render\dxOverlay;C:\Users\User\Desktop\SECTOR\SECTOR\Module\Json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\SECTOR\SECTOR\Module\Render\dxRenderer;C:\Users\User\Desktop\SECTOR\SECTOR\Module\Render\dxOverlay;C:\Users\User\Desktop\Development\C++\SECTOR\SECTOR\Module\Json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>MaxSpeed</Optimization>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
@@ -279,6 +279,7 @@
     <ClInclude Include="Module\Server\Message.h" />
     <ClInclude Include="Module\Server\Server.h" />
     <ClInclude Include="Module\Struct.h" />
+    <ClInclude Include="Module\UpdateAddress.h" />
     <ClInclude Include="Module\Var.h" />
     <ClInclude Include="Utill\Addres.h" />
     <ClInclude Include="Utill\AddresVar.h" />

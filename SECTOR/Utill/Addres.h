@@ -1,8 +1,5 @@
 #pragma once
 
-#define BOMB 34
-#define BOMB_PLANTED 129
-
 namespace GameAddresSDK
 {
 	mutex Mutex;
@@ -60,15 +57,12 @@ namespace GameAddresSDK
 
 	void StartScan()
 	{
-		if (Variable::Security::IsChecked)
-		{
-			Addres::EnginePoint = Memory::Read<int>(GameAddres::Engine + Offset::dwClientState);
+		Addres::EnginePoint = Memory::Read<int>(GameAddres::Engine + Offset::dwClientState);
 
-			thread StartLowScan(Scan::Low);
-			StartLowScan.detach();
+		thread StartLowScan(Scan::Low);
+		StartLowScan.detach();
 
-			thread StartAverageScan(Scan::Average);
-			StartAverageScan.detach();
-		}
+		thread StartAverageScan(Scan::Average);
+		StartAverageScan.detach();
 	}
 }

@@ -14,6 +14,9 @@
 #include <cmath>
 #include <Json.hpp>
 
+#include <urlmon.h>
+#pragma comment (lib, "urlmon.lib")
+
 #include <winsock.h>
 #pragma comment(lib, "WS2_32.lib")
 
@@ -26,6 +29,7 @@ using namespace nlohmann;
 #include "Addres.h"
 #include "Var.h"
 #include "Render/RenderModule.h"
+#include "UpdateAddress.h"
 
 #include "../Utill/ToolSDK.h"
 #include "../Utill/AddresVar.h"

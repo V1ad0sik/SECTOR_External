@@ -83,8 +83,8 @@ namespace GameAddres
 
         else
         {
-            MessageBox(0, "Could not find process.", ProcessName, 0);
-            //exit(0);
+            MessageBox(0, "Процесс игры не найден.", ProcessName, 0);
+            exit(0);
         }
     }
 }

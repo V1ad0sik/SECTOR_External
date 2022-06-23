@@ -435,6 +435,9 @@
     <ClInclude Include="Utill\AddresVar.h">
       <Filter>Utill</Filter>
     </ClInclude>
+    <ClInclude Include="Module\UpdateAddress.h">
+      <Filter>Module</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Menu\DirectX\Include\D3DX_DXGIFormatConvert.inl">
