@@ -18,7 +18,7 @@ void ResetDevice();
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
 {
-    VMProtectBeginMutation("Entry point");
+    //VMProtectBeginMutation("Entry point");
 
     LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
@@ -488,7 +488,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
 
                 if (ImGui::Button("Save to config", ImVec2(190, 25)))
                 {
-                    int Dialog = MessageBox(0, "Вы уверены, что хотите сохранить настройки ?", "", MB_YESNO);
+                    int Dialog = MessageBox(0, "Г‚Г» ГіГўГҐГ°ГҐГ­Г», Г·ГІГ® ГµГ®ГІГЁГІГҐ Г±Г®ГµГ°Г Г­ГЁГІГј Г­Г Г±ГІГ°Г®Г©ГЄГЁ ?", "", MB_YESNO);
 
                     if (Dialog == IDYES)
                         Config::Skinchanger::Save();
@@ -497,7 +497,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
 
                 if (ImGui::Button("Set to default", ImVec2(190, 25)))
                 {
-                    int Dialog = MessageBox(0, "Вы уверены, что хотите сброить настройки ?", "", MB_YESNO);
+                    int Dialog = MessageBox(0, "Г‚Г» ГіГўГҐГ°ГҐГ­Г», Г·ГІГ® ГµГ®ГІГЁГІГҐ Г±ГЎГ°Г®ГЁГІГј Г­Г Г±ГІГ°Г®Г©ГЄГЁ ?", "", MB_YESNO);
 
                     if (Dialog == IDYES)
                     {
@@ -648,7 +648,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
                 {
                     if (ConvarsSetting::AspectRatio)
                     {
-                        int Dialog = MessageBox(0, "Данная функция может вызывать вылет игры, продолжить?", "", MB_YESNO);
+                        int Dialog = MessageBox(0, "Г„Г Г­Г­Г Гї ГґГіГ­ГЄГ¶ГЁГї Г¬Г®Г¦ГҐГІ ГўГ»Г§Г»ГўГ ГІГј ГўГ»Г«ГҐГІ ГЁГЈГ°Г», ГЇГ°Г®Г¤Г®Г«Г¦ГЁГІГј?", "", MB_YESNO);
 
                         if (Dialog == IDYES)
                             Convars::Aspectratio();
@@ -687,7 +687,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
 
                 if (ImGui::Button("Save config", ImVec2(190, 25)))
                 {
-                    int Dialog = MessageBox(0, "Вы уверены, что хотите сохранить настройки ?", "", MB_YESNO);
+                    int Dialog = MessageBox(0, "Г‚Г» ГіГўГҐГ°ГҐГ­Г», Г·ГІГ® ГµГ®ГІГЁГІГҐ Г±Г®ГµГ°Г Г­ГЁГІГј Г­Г Г±ГІГ°Г®Г©ГЄГЁ ?", "", MB_YESNO);
 
                     if (Dialog == IDYES)
                         Config::Cheat::Save();
