@@ -12,7 +12,7 @@ namespace Offset
 	int dwMouseEnable = 0;
 	int dwForceJump = 0;
 	int dwViewMatrix = 0;
-	int dwbSendPackets = 0;
+	int m_bDormant = 0;
 	int dwMouseIndexActive = 0;
 
 	int m_iGlowIndex = 0;
@@ -45,5 +45,4 @@ namespace Offset
 	int m_bIsScoped = 0;
 	int m_hViewModel = 0;
 	int m_nModelIndex = 0;
-	int m_bDormant = 0;
 }

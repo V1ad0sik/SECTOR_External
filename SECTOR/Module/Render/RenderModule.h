@@ -5,6 +5,7 @@
 #include <string>
 #include <thread>
 #include <windows.h>
+#include <stdexcept>
 
 using namespace std;
 

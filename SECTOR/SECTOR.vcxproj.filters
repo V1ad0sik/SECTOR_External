@@ -52,12 +52,18 @@
     <Filter Include="Module\Server">
       <UniqueIdentifier>{666854df-ce3e-4ada-b95c-be25c135ac2b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Module\Json">
+      <UniqueIdentifier>{c794a4ed-767f-47dc-8732-62dc94047b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\VMP">
+      <UniqueIdentifier>{3459fca7-f9cf-4351-89c4-c27ca96beb92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Dumper">
+      <UniqueIdentifier>{c1b1501b-dd7a-464b-b05a-d7cdefc78985}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Module\Include.h">
-      <Filter>Module</Filter>
-    </ClInclude>
-    <ClInclude Include="Module\Json\Json.hpp">
       <Filter>Module</Filter>
     </ClInclude>
     <ClInclude Include="Module\GetGameAddres.h">
@@ -69,13 +75,13 @@
     <ClInclude Include="Module\Struct.h">
       <Filter>Module</Filter>
     </ClInclude>
-    <ClInclude Include="Module\Addres.h">
+    <ClInclude Include="Module\Address.h">
       <Filter>Module</Filter>
     </ClInclude>
     <ClInclude Include="Utill\SDK.h">
       <Filter>Utill</Filter>
     </ClInclude>
-    <ClInclude Include="Utill\Addres.h">
+    <ClInclude Include="Utill\Address.h">
       <Filter>Utill</Filter>
     </ClInclude>
     <ClInclude Include="Utill\GlowESP.h">
@@ -438,6 +444,21 @@
     <ClInclude Include="Module\UpdateAddress.h">
       <Filter>Module</Filter>
     </ClInclude>
+    <ClInclude Include="Module\Json\Json.hpp">
+      <Filter>Module\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\VMP\VMProtectSDK.h">
+      <Filter>Module\VMP</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Dumper\Dumper.h">
+      <Filter>Module\Dumper</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Dumper\FindPattern.h">
+      <Filter>Module\Dumper</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Dumper\Game.h">
+      <Filter>Module\Dumper</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Menu\DirectX\Include\D3DX_DXGIFormatConvert.inl">
@@ -461,5 +482,10 @@
     <None Include="Menu\DirectX\Include\xnamathvector.inl">
       <Filter>Menu\DirectX</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Module\VMP\VMProtectSDK32.lib">
+      <Filter>Module\VMP</Filter>
+    </Library>
   </ItemGroup>
 </Project>

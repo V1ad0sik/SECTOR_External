@@ -12,6 +12,7 @@
 #include <mutex>
 #include <intrin.h>
 #include <cmath>
+#include <stdio.h>
 #include <Json.hpp>
 
 #include <urlmon.h>
@@ -26,16 +27,17 @@ using namespace nlohmann;
 #include "GetGameAddres.h"
 #include "Memory.h"
 #include "Struct.h"
-#include "Addres.h"
+#include "Address.h"
 #include "Var.h"
 #include "Render/RenderModule.h"
-#include "UpdateAddress.h"
 
 #include "../Utill/ToolSDK.h"
 #include "../Utill/AddresVar.h"
 #include "../Utill//SDK.h"
 
 #include "../Utill/EntityClassID.h"
+
+#include "Dumper/Dumper.h"
 
 #include "../Utill/GlowESP.h"
 #include "../Utill/GlowESPDistance.h"
@@ -59,7 +61,7 @@ using namespace nlohmann;
 #include "../Utill/ConvarsSDK.h"
 #include "../Utill/Convars.h"
 
-#include "../Utill/Addres.h"
+#include "../Utill/Address.h"
 
 #include "../Menu/ImGui/imgui.h"
 #include "../Menu/ImGui/imgui_impl_dx9.h"

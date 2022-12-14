@@ -1,4 +1,5 @@
 #include "Module/Include.h"
+#include "Module/VMP/VMProtectSDK.h"
 
 
 int WinWidth = 645;
@@ -17,6 +18,8 @@ void ResetDevice();
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
 {
+    VMProtectBeginMutation("Entry point");
+
     LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
     WNDCLASSEXW WCLASS = { sizeof(WNDCLASSEXW), CS_CLASSDC, WndProc, 64, 64, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, L"SECTOR BETA", NULL };
@@ -39,8 +42,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
 
     GameAddres::GetGameAddres("csgo.exe", "Counter-Strike: Global Offensive - Direct3D 9");
 
-    Updater::Update();
-    Updater::Remove();
+    Dumper::Signatures();
+    Dumper::NetVars();
 
     GameAddresSDK::StartScan();
 
@@ -570,18 +573,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
                 Menu::SetDescription("Max Alpha");
 
 
-                if (ImGui::Checkbox("Fake Lag", &FakeLagSetting::Status))
-                {
-                    if (FakeLagSetting::Status)
-                    {
-                        thread _FakeLag(FakeLag);
-                        _FakeLag.detach();
-                    }
-                }
-
-                ImGui::SliderInt("   ", &FakeLagSetting::Tick, 0, 32);
-                Menu::SetDescription("Tick");
-
                 ImGui::PopItemWidth();
                 ImGui::EndChild();
 
@@ -622,20 +613,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
                     else
                     {
                         Convars::GrenadePreview(0);
-                    }
-                }
-
-
-                if (ImGui::Checkbox("Fullbrigth", &ConvarsSetting::FullBright))
-                {
-                    if (ConvarsSetting::FullBright)
-                    {
-                        Convars::FullBright(1);
-                    }
-
-                    else
-                    {
-                        Convars::FullBright(1);
                     }
                 }
 
@@ -756,6 +733,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, PSTR, int)
     DestroyWindow(HWND);
     UnregisterClassW(WCLASS.lpszClassName, WCLASS.hInstance);
 
+    //VMProtectEnd();
     return 0;
 }
 

@@ -74,23 +74,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>Module\VMP;Module\Json;$(DXSDK_DIR)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>Module\VMP;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>Module\VMP;Module\Json;$(DXSDK_DIR)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>Module\VMP;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>Module\VMP;Module\Json;$(DXSDK_DIR)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>Module\VMP;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Vlad\Desktop\ProjectSector\Cheat\SECTOR_CONSOLE\SECTOR\Module\Defender\VMP;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>Module\VMP;Module\Json;$(DXSDK_DIR)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>Module\VMP;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -262,10 +262,13 @@
     <ClInclude Include="Menu\ImGui\imstb_textedit.h" />
     <ClInclude Include="Menu\ImGui\imstb_truetype.h" />
     <ClInclude Include="Menu\MenuConfig.h" />
-    <ClInclude Include="Module\Addres.h" />
+    <ClInclude Include="Module\Address.h" />
     <ClInclude Include="Module\Config\Config.h" />
     <ClInclude Include="Module\Defender\BSOD.h" />
     <ClInclude Include="Module\Defender\HideImport.h" />
+    <ClInclude Include="Module\Dumper\Dumper.h" />
+    <ClInclude Include="Module\Dumper\FindPattern.h" />
+    <ClInclude Include="Module\Dumper\Game.h" />
     <ClInclude Include="Module\GetGameAddres.h" />
     <ClInclude Include="Module\Include.h" />
     <ClInclude Include="Module\Json\Json.hpp" />
@@ -281,7 +284,8 @@
     <ClInclude Include="Module\Struct.h" />
     <ClInclude Include="Module\UpdateAddress.h" />
     <ClInclude Include="Module\Var.h" />
-    <ClInclude Include="Utill\Addres.h" />
+    <ClInclude Include="Module\VMP\VMProtectSDK.h" />
+    <ClInclude Include="Utill\Address.h" />
     <ClInclude Include="Utill\AddresVar.h" />
     <ClInclude Include="Utill\AimBot.h" />
     <ClInclude Include="Utill\AutoPistol.h" />
@@ -316,6 +320,9 @@
     <None Include="Menu\DirectX\Include\xnamathmatrix.inl" />
     <None Include="Menu\DirectX\Include\xnamathmisc.inl" />
     <None Include="Menu\DirectX\Include\xnamathvector.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Module\VMP\VMProtectSDK32.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

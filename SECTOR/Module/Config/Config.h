@@ -429,14 +429,14 @@ namespace Config
 					}
 
 
-					FakeLagSetting::Status = Setting["FakeLag"]["Statuts"];
+					/*FakeLagSetting::Status = Setting["FakeLag"]["Statuts"];
 					FakeLagSetting::Tick = Setting["FakeLag"]["Tick"];
 
 					if (FakeLagSetting::Status)
 					{
 						thread _FakeLag(FakeLag);
 						_FakeLag.detach();
-					}
+					}*/
 				}
 
 				catch (exception) {}
@@ -578,8 +578,8 @@ namespace Config
 			SaveConfig[("NoFlash")][("Status")] = NoFlashSetting::Status;
 			SaveConfig[("NoFlash")][("Value")] = NoFlashSetting::Value;
 
-			SaveConfig[("FakeLag")][("Statuts")] = FakeLagSetting::Status;
-			SaveConfig[("FakeLag")][("Tick")] = FakeLagSetting::Tick;
+			/*SaveConfig[("FakeLag")][("Statuts")] = FakeLagSetting::Status;
+			SaveConfig[("FakeLag")][("Tick")] = FakeLagSetting::Tick;*/
 
 			SaveConfig[("Convars")][("BostFPS")] = ConvarsSetting::BostFPS;
 			SaveConfig[("Convars")][("SvCheats")] = ConvarsSetting::SvCheats;
